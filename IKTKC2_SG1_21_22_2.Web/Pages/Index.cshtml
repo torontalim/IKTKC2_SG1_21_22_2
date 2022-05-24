@@ -1,0 +1,145 @@
+﻿@page
+@{
+    ViewData["Title"] = "Player website";
+}
+<script>
+    new Vue({
+        template: `
+            <div id="app">
+                <div v-if="selectedPage === 'list'">
+                    <h1>This is the list page.</h1>
+                    <button v-on:click="getPlayers()">Click here to refresh the player list!</button>
+                    <button v-on:click="showEditor(null)">Add new player!</button>
+                    <div class="table flex-center">
+                        <div class="tr flex-center">
+                            <div class="td tr-header flex-center">Name</div>
+                            <div class="td tr-header flex-center">Email</div>
+                            <div class="td tr-header flex-center">Phone number</div>
+                            <div class="td tr-header flex-center">Date of birth</div>
+                            <div class="td tr-header flex-center">Still active</div>
+                            <div class="td flex-center td-empty"></div>
+                            <div class="td flex-center td-empty"></div>
+                            <div class="td flex-center td-empty"></div>
+                        </div>
+                        <div v-for="player in players" class="tr flex-center">
+                            <div class="td flex-center">{{ player.name }}</div>
+                            <div class="td flex-center">{{ player.email }}</div>
+                            <div class="td flex-center">{{ player.phoneNumber }}</div>
+                            <div class="td flex-center">{{ player.dateOfBirth }}</div>
+                            <div class="td flex-center">{{ player.active ? 'Yes' : 'No' }}</div>
+                            <div class="td flex-center td-button"><button v-on:click="showEditor(player)">Edit</button></div>
+                            <div class="td flex-center td-button"><button v-on:click="showDetails(player)">Details</button></div>
+                            <div class="td flex-center td-button"><button v-on:click="deletePlayer(player)">Delete</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div v-if="selectedPage === 'editor'">
+                    <div class="flex-col">
+                        <h1>This is the editor page.</h1>
+                        <div class="flex-col" style="width: 300">
+                            <div class="flex">
+                                <label>Player</label>
+                                <input type="text" v-model="selectedPlayer.name" />
+                            </div>
+                            <div class="flex">
+                                <label>Email</label>
+                                <input type="text" v-model="selectedPlayer.email" />
+                            </div>
+                            <div class="flex">
+                                <label>Phone number:</label>
+                                <input type="text" v-model="selectedPlayer.phoneNumber" />
+                            </div>
+                            <div class="flex">
+                                <label>Date of birth:</label>
+                                <input type="date" v-model="selectedPlayer.dateOfBirth" />
+                            </div>
+                            <div class="flex">
+                                <label>Active:</label>
+                                <input type="checkbox" v-model="selectedPlayer.active" />
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <button v-on:click="savePlayer()">Save</button>
+                            <button v-on:click="showList()">Back to list</button>
+                        </div>
+                    </div>
+                </div>
+                <div v-if="selectedPage === 'details'">
+                    <div class="flex-col" style="width: 300">
+                        <h1>Details page</h1>
+                        <p>Player: {{selectedPlayer.name}}</p>
+                        <p>Email: {{selectedPlayer.email}}</p>
+                        <p>Phone number: {{selectedPlayer.phoneNumber}}</p>
+                        <p>Date of birth: {{selectedPlayer.dateOfBirth}}</p>
+                        <p>Active: {{ selectedPlayer.active == true ? 'Yes' : 'No' }}</p>
+                        <button v-on:click="showList()">Back to list</button>
+                    </div>
+                </div>
+            </div>
+        `,
+        el: '#app',
+        data: {
+            players: [],
+            selectedPlayer: {},
+            selectedPage: 'list'
+        },
+        methods: {
+            savePlayer() {
+                if (this.selectedPlayer.playerId > 0) {
+                    axios.put('https://localhost:44325/Player/' + this.selectedPlayer.playerId, this.selectedPlayer)
+                        .then(response => {
+                            alert(response.data);
+                            this.showList();
+                        });
+                }
+                else {
+                    axios.post('https://localhost:44325/Player', this.selectedPlayer)
+                        .then(response => {
+                            alert(response.data);
+                            this.showList();
+                        });
+                }
+            },
+            deletePlayer(player) {
+                axios.delete('https://localhost:44325/Player/' + player.playerId)
+                    .then(response => {
+                        alert(response.data);
+                        this.showList();
+                    });
+            },
+            getPlayers() {
+                this.players = [];
+                axios.get('https://localhost:44325/Player')
+                    .then(response => this.players = response.data);
+            },
+            showList() {
+                this.selectedPlayer = null;
+                this.selectedPage = 'list';
+                this.getPlayers();
+            },
+            showEditor(player) {
+                this.selectedPlayer = player;
+
+                if (this.selectedPlayer == null) {
+                    this.selectedPlayer = {
+                        playerId: 0,
+                        name: '',
+                        email: '',
+                        phoneNumber: '',
+                        dateOfBirth: null,
+                        active: false
+                    };
+                }
+                else {
+                    this.selectedPlayer.dateOfBirth = this.selectedPlayer.dateOfBirth.substring(0, 10);
+                }
+
+                this.selectedPage = 'editor';
+            },
+            showDetails(player) {
+                this.selectedPlayer = player;
+                this.selectedPage = 'details';
+            }
+        }
+    });
+</script>

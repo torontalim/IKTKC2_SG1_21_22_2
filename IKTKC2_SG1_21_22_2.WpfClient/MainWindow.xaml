@@ -1,0 +1,34 @@
+﻿<Window x:Class="IKTKC2_SG1_21_22_2.WpfClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IKTKC2_SG1_21_22_2.WpfClient" xmlns:viewModels="clr-namespace:IKTKC2_SG1_21_22_2.WpfClient.ViewModels"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="850"
+        Loaded="Window_Loaded">
+    <Window.Resources>
+        <viewModels:MainWindowViewModel x:Key="VM" />
+    </Window.Resources>
+    <StackPanel DataContext="{StaticResource ResourceKey=VM}">
+        <DockPanel Margin="0 0 20 0" HorizontalAlignment="Center">
+            <Button Content="Add new player" Width="200" Command="{Binding AddPlayerCommand}"></Button>
+            <Button Content="Edit selected player" Width="200" Command="{Binding UpdatePlayerCommand}"></Button>
+            <Button Content="Delete selected player" Width="200" Command="{Binding DeletePlayerCommand}" ></Button>
+            <Button Content="See selected player details" Width="200"  Command="{Binding PlayerDetailsCommand}"></Button>
+        </DockPanel>
+        <ListBox ItemsSource="{Binding Players}" SelectedItem="{Binding SelectedPlayer, Mode=TwoWay}" Height="435">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <DockPanel Width="750">
+                        <TextBlock Text="{Binding Name}" Width="150"></TextBlock>
+                        <TextBlock Text="{Binding Email}" Width="150"></TextBlock>
+                        <TextBlock Text="{Binding PhoneNumber}" Width="150"></TextBlock>
+                        <TextBlock Text="{Binding DateOfBirth}" Width="150"></TextBlock>
+                        <CheckBox IsChecked="{Binding Active}" Width="150" IsEnabled="False"></CheckBox>
+                    </DockPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </StackPanel>
+</Window>
