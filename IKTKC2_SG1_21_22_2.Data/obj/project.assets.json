@@ -543,35 +543,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\szabono\\.nuget\\packages\\": {}
+    "C:\\Users\\Eszti\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\szabono\\Downloads\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Data\\IKTKC2_SG1_21_22_2.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Eszti\\Documents\\GitHub\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Data\\IKTKC2_SG1_21_22_2.Data.csproj",
       "projectName": "IKTKC2_SG1_21_22_2.Data",
-      "projectPath": "C:\\Users\\szabono\\Downloads\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Data\\IKTKC2_SG1_21_22_2.Data.csproj",
-      "packagesPath": "C:\\Users\\szabono\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\szabono\\Downloads\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Data\\obj\\",
+      "projectPath": "C:\\Users\\Eszti\\Documents\\GitHub\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Data\\IKTKC2_SG1_21_22_2.Data.csproj",
+      "packagesPath": "C:\\Users\\Eszti\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Eszti\\Documents\\GitHub\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\szabono\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Eszti\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "https://nexus.ekreta.hu/repository/nuget-kreta-feed/": {},
-        "https://nexus.ekreta.hu/repository/nuget-org-v3/index.json": {},
-        "https://tfs.sdainformatika.hu/tfs/SDA/KretaCore/_git/Kreta.Core.KkszbTool": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\szabono\\Downloads\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Models\\IKTKC2_SG1_21_22_2.Models.csproj": {
-              "projectPath": "C:\\Users\\szabono\\Downloads\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Models\\IKTKC2_SG1_21_22_2.Models.csproj"
+            "C:\\Users\\Eszti\\Documents\\GitHub\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Models\\IKTKC2_SG1_21_22_2.Models.csproj": {
+              "projectPath": "C:\\Users\\Eszti\\Documents\\GitHub\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Models\\IKTKC2_SG1_21_22_2.Models.csproj"
             }
           }
         }
@@ -601,12 +600,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "skIGa8S5pWkmBSPOBG2JjWJDfOLEpz46oMKSGeQkmGAR5/uBLqTjUCN6iGVzGXiyQrFmw/JJezzcLGPVpG5eHw==",
+  "dgSpecHash": "jiExuQ3M43HDCnh4G44ENtQiy1Gy1wAQUvy7sX1JTK4Ymz+Age/uP2M+02K28QzB1HylET89grw/rXnK3a2zEw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\szabono\\Downloads\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Web\\IKTKC2_SG1_21_22_2.Web.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Eszti\\Documents\\GitHub\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Web\\IKTKC2_SG1_21_22_2.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Eszti\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.15\\microsoft.netcore.app.host.win-x64.5.0.15.nupkg.sha512",
+    "C:\\Users\\Eszti\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Eszti\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Eszti\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
