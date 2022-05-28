@@ -1,0 +1,197 @@
+﻿@{
+    ViewData["Title"] = "Player website";
+}
+
+<div id="app">
+    <template v-if="selectedPage == 'list'">
+        <h1>This is the list page.</h1>
+
+        <button v-on:click="getPlayers()">Click here to refresh the player list!</button>
+        <button v-on:click="showEditor(null)">Add new player!</button>
+        <div class="table flex-center">
+            <div class="tr flex-center">
+                <div class="td tr-header flex-center">Name</div>
+                <div class="td tr-header flex-center">Email</div>
+                <div class="td tr-header flex-center">Phone number</div>
+                <div class="td tr-header flex-center">Date of birth</div>
+                <div class="td tr-header flex-center">Still active</div>
+                <div class="td flex-center td-empty"></div>
+                <div class="td flex-center td-empty"></div>
+                <div class="td flex-center td-empty"></div>
+            </div>
+            <div v-for="player in players" class="tr flex-center">
+                <div class="td flex-center">{{ player.name }}</div>
+                <div class="td flex-center">{{ player.email }}</div>
+                <div class="td flex-center">{{ player.phoneNumber }}</div>
+                <div class="td flex-center">{{ player.dateOfBirth }}</div>
+                <div class="td flex-center">{{ player.active ? 'Yes' : 'No' }}</div>
+                <div class="td flex-center td-button"><button v-on:click="showEditor(player)">Edit</button></div>
+                <div class="td flex-center td-button"><button v-on:click="showDetails(player)">Details</button></div>
+                <div class="td flex-center td-button"><button v-on:click="deletePlayer(player)">Delete</button></div>
+            </div>
+        </div>
+    </template>
+    <template v-else-if="selectedPage == 'details'">
+        <details-component v-bind:player="selectedPlayer" v-bind:playerId="playerId" v-on:close="showList"></details-component>
+    </template>
+    <template v-else>
+        <editor-component v-bind:player="selectedPlayer" v-on:close="showList"></editor-component>
+    </template>
+</div>
+
+<script>
+    new Vue({
+        template: '',
+        el: `#app`,
+        data: {
+            players: [],
+            selectedPlayerId: 0,
+            selectedPlayer: {},
+            selectedPage: 'list'
+        },
+        methods: {
+            showDetails(player) {
+                this.selectedPlayer = player;
+                this.selectedPage = 'details';
+            },
+            showEditor(player) {
+                this.selectedPlayer = player;
+
+                if (this.selectedPlayer == null) {
+                    this.selectedPlayerId = 0;
+                    this.selectedPlayer = {
+                        name: '',
+                        email: '',
+                        phoneNumber: '',
+                        dateOfBirth: null,
+                        active: false
+                    };
+                }
+                else {
+                    this.selectedPlayerId = player.playerId;
+
+                    this.selectedPlayer = {
+                        name: player.name,
+                        email: player.email,
+                        phoneNumber: player.phoneNumber,
+                        dateOfBirth: player.dateOfBirth.substring(0, 10),
+                        active: player.active
+                    };
+                }
+
+                this.selectedPage = 'editor';
+            },
+            showList() {
+                this.players = [];
+                this.selectedPlayer = null;
+                this.getPlayers();
+
+                this.selectedPage = 'list';
+            },
+            deletePlayer(player) {
+                axios.delete('https://localhost:44325/Player/' + player.playerId)
+                    .then(response => {
+                        alert(response.data);
+                        this.getPlayers();
+                    });
+            },
+            getPlayers() {
+                this.players = [];
+                axios.get('https://localhost:44325/Player')
+                    .then(response => this.players = response.data);
+            }
+        },
+        created: function () {
+            this.showList();
+        }
+    });
+
+    Vue.component('editor-component', {
+        props: ['player', 'playerId'],
+        template: '#editor-template',
+        methods: {
+            savePlayer() {
+                if (this.player.playerId > 0) {
+                    axios.put('https://localhost:44325/Player/' + this.playerId, this.player)
+                        .then(response => {
+                            alert(response.data);
+                            this.backToList();
+                        });
+                }
+                else {
+                    axios.post('https://localhost:44325/Player', this.player)
+                        .then(response => {
+                            alert(response.data);
+                            this.backToList();
+                        });
+                }
+            },
+            backToList() {
+                this.$emit('close');
+            }
+        }
+    });
+
+    Vue.component('details-component', {
+        props: ['player'],
+        template: '#details-template',
+        methods: {
+            backToList() {
+                this.$emit('close');
+            }
+        }
+    });
+
+</script>
+
+<script type="text/x-template" id="editor-template">
+    <div class="flex-col">
+        <h1>This is the editor page.</h1>
+
+        <div class="flex-col" style="width: 300">
+            <div class="flex">
+                <label>Player</label>
+                <input type="text" v-model="player.name" />
+            </div>
+
+            <div class="flex">
+                <label>Email</label>
+                <input type="text" v-model="player.email" />
+            </div>
+
+            <div class="flex">
+                <label>Phone number:</label>
+                <input type="text" v-model="player.phoneNumber" />
+            </div>
+
+            <div class="flex">
+                <label>Date of birth:</label>
+                <input type="date" v-model="player.dateOfBirth" />
+            </div>
+
+            <div class="flex">
+                <label>Active:</label>
+                <input type="checkbox" v-model="player.active" />
+            </div>
+        </div>
+
+        <div class="flex">
+            <button v-on:click="savePlayer()">Save</button>
+            <button v-on:click="backToList()">Back to list</button>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-template" id="details-template">
+    <div class="flex-col" style="width: 300">
+        <h1>Details page</h1>
+
+        <p>Player: {{player.name}}</p>
+        <p>Email: {{player.email}}</p>
+        <p>Phone number: {{player.phoneNumber}}</p>
+        <p>Date of birth: {{player.dateOfBirth}}</p>
+        <p>Active: {{ player.active == true ? 'Yes' : 'No' }}</p>
+        
+        <button v-on:click="backToList()">Back to list</button>
+    </div>
+</script>

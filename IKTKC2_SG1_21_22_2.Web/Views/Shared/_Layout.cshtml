@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <div id="app">
-        @RenderBody()
-    </div>
+    @RenderBody()
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
