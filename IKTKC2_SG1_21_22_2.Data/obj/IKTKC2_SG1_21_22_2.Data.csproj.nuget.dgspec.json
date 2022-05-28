@@ -1,0 +1,128 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\szabono\\Downloads\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Data\\IKTKC2_SG1_21_22_2.Data.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\szabono\\Downloads\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Data\\IKTKC2_SG1_21_22_2.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\szabono\\Downloads\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Data\\IKTKC2_SG1_21_22_2.Data.csproj",
+        "projectName": "IKTKC2_SG1_21_22_2.Data",
+        "projectPath": "C:\\Users\\szabono\\Downloads\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Data\\IKTKC2_SG1_21_22_2.Data.csproj",
+        "packagesPath": "C:\\Users\\szabono\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\szabono\\Downloads\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\szabono\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://nexus.ekreta.hu/repository/nuget-kreta-feed/": {},
+          "https://nexus.ekreta.hu/repository/nuget-org-v3/index.json": {},
+          "https://tfs.sdainformatika.hu/tfs/SDA/KretaCore/_git/Kreta.Core.KkszbTool": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\szabono\\Downloads\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Models\\IKTKC2_SG1_21_22_2.Models.csproj": {
+                "projectPath": "C:\\Users\\szabono\\Downloads\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Models\\IKTKC2_SG1_21_22_2.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\szabono\\Downloads\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Models\\IKTKC2_SG1_21_22_2.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\szabono\\Downloads\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Models\\IKTKC2_SG1_21_22_2.Models.csproj",
+        "projectName": "IKTKC2_SG1_21_22_2.Models",
+        "projectPath": "C:\\Users\\szabono\\Downloads\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Models\\IKTKC2_SG1_21_22_2.Models.csproj",
+        "packagesPath": "C:\\Users\\szabono\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\szabono\\Downloads\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\szabono\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://nexus.ekreta.hu/repository/nuget-kreta-feed/": {},
+          "https://nexus.ekreta.hu/repository/nuget-org-v3/index.json": {},
+          "https://tfs.sdainformatika.hu/tfs/SDA/KretaCore/_git/Kreta.Core.KkszbTool": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

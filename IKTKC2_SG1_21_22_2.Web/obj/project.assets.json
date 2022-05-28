@@ -1,0 +1,71 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net5.0": []
+  },
+  "packageFolders": {
+    "C:\\Users\\szabono\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\szabono\\Downloads\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Web\\IKTKC2_SG1_21_22_2.Web.csproj",
+      "projectName": "IKTKC2_SG1_21_22_2.Web",
+      "projectPath": "C:\\Users\\szabono\\Downloads\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Web\\IKTKC2_SG1_21_22_2.Web.csproj",
+      "packagesPath": "C:\\Users\\szabono\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\szabono\\Downloads\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Web\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\szabono\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "https://nexus.ekreta.hu/repository/nuget-kreta-feed/": {},
+        "https://nexus.ekreta.hu/repository/nuget-org-v3/index.json": {},
+        "https://tfs.sdainformatika.hu/tfs/SDA/KretaCore/_git/Kreta.Core.KkszbTool": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
