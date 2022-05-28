@@ -1,0 +1,17 @@
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Repository\bin\Debug\net5.0\IKTKC2_SG1_21_22_2.Repository.deps.json
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Repository\bin\Debug\net5.0\IKTKC2_SG1_21_22_2.Repository.dll
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Repository\bin\Debug\net5.0\IKTKC2_SG1_21_22_2.Repository.pdb
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Repository\bin\Debug\net5.0\IKTKC2_SG1_21_22_2.Data.dll
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Repository\bin\Debug\net5.0\IKTKC2_SG1_21_22_2.Models.dll
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Repository\bin\Debug\net5.0\IKTKC2_SG1_21_22_2.Data.pdb
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Repository\bin\Debug\net5.0\IKTKC2_SG1_21_22_2.Models.pdb
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Repository\obj\Debug\net5.0\IKTKC2_SG1_21_22_2.Repository.csproj.AssemblyReference.cache
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Repository\obj\Debug\net5.0\IKTKC2_SG1_21_22_2.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Repository\obj\Debug\net5.0\IKTKC2_SG1_21_22_2.Repository.AssemblyInfoInputs.cache
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Repository\obj\Debug\net5.0\IKTKC2_SG1_21_22_2.Repository.AssemblyInfo.cs
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Repository\obj\Debug\net5.0\IKTKC2_SG1_21_22_2.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Repository\obj\Debug\net5.0\IKTKC2_SG1_21_22_2.Repository.csproj.CopyComplete
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Repository\obj\Debug\net5.0\IKTKC2_SG1_21_22_2.Repository.dll
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Repository\obj\Debug\net5.0\refint\IKTKC2_SG1_21_22_2.Repository.dll
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Repository\obj\Debug\net5.0\IKTKC2_SG1_21_22_2.Repository.pdb
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Repository\obj\Debug\net5.0\ref\IKTKC2_SG1_21_22_2.Repository.dll

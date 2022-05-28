@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "IKTKC2_SG1_21_22_2.Models/1.0.0": {
+        "runtime": {
+          "IKTKC2_SG1_21_22_2.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IKTKC2_SG1_21_22_2.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

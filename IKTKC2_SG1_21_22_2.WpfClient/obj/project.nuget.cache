@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "F2ZqGmwHI5L6vQdF/JUNy9jo1OVRTyzJ7Ox/phgDEiwBY8lgRODwIU5WlzjzUC77dFMQuWpUXcerB7Qi5TBeNg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Eszti\\Documents\\GitHub\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.WpfClient\\IKTKC2_SG1_21_22_2.WpfClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Eszti\\.nuget\\packages\\mvvmlightlibsstd10\\5.4.1.1\\mvvmlightlibsstd10.5.4.1.1.nupkg.sha512",
+    "C:\\Users\\Eszti\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gn/rSvNeA0mxaAA7sCXk88rVfHFLccfKnxvXmvq9b5b6owLRVvIT2UviYmk+blMdLZJxRB5cUdGYK4yc83WLMA==",
+  "dgSpecHash": "c7t7xn4J3mw1OwwCbV6FWJXv5dfP1H7y1u7mfjK95Qhjehwb+/X/0cML6eXpUJpjNdZBqaurdWx5C65pTaAsEw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Eszti\\Documents\\GitHub\\IKTKC2_SG1_21_22_2\\IKTKC2_SG1_21_22_2.Data\\IKTKC2_SG1_21_22_2.Data.csproj",
   "expectedPackageFiles": [
@@ -17,10 +17,7 @@
     "C:\\Users\\Eszti\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\Eszti\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\Eszti\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
-    "C:\\Users\\Eszti\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
-    "C:\\Users\\Eszti\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Eszti\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Eszti\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\Eszti\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
   ],
   "logs": []
 }

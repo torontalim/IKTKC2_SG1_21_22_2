@@ -1,0 +1,12 @@
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Models\bin\Debug\net5.0\IKTKC2_SG1_21_22_2.Models.deps.json
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Models\bin\Debug\net5.0\IKTKC2_SG1_21_22_2.Models.dll
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Models\bin\Debug\net5.0\IKTKC2_SG1_21_22_2.Models.pdb
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Models\obj\Debug\net5.0\IKTKC2_SG1_21_22_2.Models.csproj.AssemblyReference.cache
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Models\obj\Debug\net5.0\IKTKC2_SG1_21_22_2.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Models\obj\Debug\net5.0\IKTKC2_SG1_21_22_2.Models.AssemblyInfoInputs.cache
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Models\obj\Debug\net5.0\IKTKC2_SG1_21_22_2.Models.AssemblyInfo.cs
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Models\obj\Debug\net5.0\IKTKC2_SG1_21_22_2.Models.csproj.CoreCompileInputs.cache
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Models\obj\Debug\net5.0\IKTKC2_SG1_21_22_2.Models.dll
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Models\obj\Debug\net5.0\refint\IKTKC2_SG1_21_22_2.Models.dll
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Models\obj\Debug\net5.0\IKTKC2_SG1_21_22_2.Models.pdb
+C:\Users\Eszti\Documents\GitHub\IKTKC2_SG1_21_22_2\IKTKC2_SG1_21_22_2.Models\obj\Debug\net5.0\ref\IKTKC2_SG1_21_22_2.Models.dll
